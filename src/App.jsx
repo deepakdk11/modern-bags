@@ -3,13 +3,16 @@ import Header from "./Header";
 import "./Header.css"
 import "./ImageSlider.css"
 import ImageSlider from "./ImageSlider";
-import img1 from "./assets/img1.png"
-import img2 from "./assets/img2.png"
-import img3 from "./assets/img3.png"
+import imgBanner1 from "./assets/banner/imgbanner1.jpg"
+import imgBanner2 from "./assets/banner/imgbanner2.jpg"
+import imgBanner3 from "./assets/banner/imgbanner3.jpg"
+import imgBanner4 from "./assets/banner/imgbanner4.jpg"
+import imgBanner5 from "./assets/banner/imgbanner5.jpg"
+
 
 function App(){
 
-  const images = [img1, img2, img3]
+  const images = [imgBanner1, imgBanner2, imgBanner3, imgBanner4, imgBanner5]
 
   return(
     <div>
