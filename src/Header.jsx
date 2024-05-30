@@ -1,4 +1,6 @@
 import React from "react";
+import { FaSearch } from "react-icons/fa";
+import { FaCartArrowDown } from "react-icons/fa";
 
 const Header = () => {
     return(
@@ -15,8 +17,10 @@ const Header = () => {
                 </ul>
             </div>
             <div className="add-cart">
-                <button className="search">Search</button>
-                <button className="cart">cart</button>
+                <FaSearch role="button" size={30} style={{cursor:"pointer"}} />
+                <FaCartArrowDown role="button" size={30} style={{padding : "0px 20px", cursor: "pointer"}} />
+                {/* <button className="search">Search</button> */}
+                {/* <button className="cart">cart</button> */}
                 <button className="sign">Sign in</button>
             </div>
         </nav>
