@@ -5,7 +5,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
 
-const Navbar = () => {
+const Navbar = ({setPopup}) => {
 
     const [menu, setMenu] = useState("home")
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                     />
                 </Link> 
 
-                <button className="sign">Sign in</button>
+                <button onClick={() => setPopup(true)} className="sign">Sign in</button>
             </div>
         </nav>
     );
