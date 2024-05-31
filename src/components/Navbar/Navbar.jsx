@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Navbar.css"
 import { FaSearch } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
 
-const Header = () => {
+const Navbar = () => {
+
+    const [menu, setMenu] = useState("home")
+
     return(
+
         <nav>
             <div className="title">
                 <p>Modern Bags</p>
             </div>
             <div className="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Top Brands</li>
-                    <li>Contact</li>
+                    <li onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""} >Home</li>
+                    <li onClick={() => setMenu("categories")} className={menu === "categories" ? "active" : ""} >Categories</li>
+                    <li onClick={() => setMenu("brands")} className={menu === "brands" ? "active" : ""} >Top Brands</li>
+                    <li onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""} >Contact</li>
                 </ul>
             </div>
             <div className="add-cart">
@@ -27,4 +32,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Navbar;

@@ -1,22 +1,21 @@
-import React from "react";
-import Header from "./Header";
-import "./Header.css"
-import "./ImageSlider.css"
-import ImageSlider from "./ImageSlider";
-import imgBanner1 from "./assets/banner/imgbanner1.jpg"
-import imgBanner2 from "./assets/banner/imgbanner2.jpg"
-import imgBanner3 from "./assets/banner/imgbanner3.jpg"
-import imgBanner4 from "./assets/banner/imgbanner4.jpg"
-import imgBanner5 from "./assets/banner/imgbanner5.jpg"
+import React  from "react";
+import Navbar from "./components/Navbar/Navbar";
+import ImageSlider from "./components/Image Slider/ImageSlider";
+import {imageBanner} from "./assets/assets.js"
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home.jsx"
 
 
 function App(){
 
-  const images = [imgBanner1, imgBanner2, imgBanner3, imgBanner4, imgBanner5]
+  const images = [imageBanner.imgBanner1, imageBanner.imgBanner2, imageBanner.imgBanner3, imageBanner.imgBanner4, imageBanner.imgBanner5]
 
   return(
     <div>
-      <Header />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <ImageSlider images={images} />
     </div>
   );
