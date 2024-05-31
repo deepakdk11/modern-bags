@@ -1,9 +1,9 @@
 import React  from "react";
 import Navbar from "./components/Navbar/Navbar";
-import ImageSlider from "./components/Image Slider/ImageSlider";
 import {imageBanner} from "./assets/assets.js"
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx"
+import Cart from "./pages/Cart/Cart.jsx";
 
 
 function App(){
@@ -14,9 +14,9 @@ function App(){
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home images={images} />} />
+        <Route path="/cart" element={ <Cart /> }/>
       </Routes>
-      <ImageSlider images={images} />
     </div>
   );
 };

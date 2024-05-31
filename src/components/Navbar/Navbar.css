@@ -1,7 +1,6 @@
 nav{
     margin: 5px;
     padding: 5px 40px;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -16,10 +15,13 @@ nav{
     padding: 0px 10px;
 }
 
+.menu ul{
+    display: flex;
+    gap: 20px;
+}
+
 li{
     list-style: none;
-    display: inline;
-    padding: 0px 15px;
     cursor: pointer;
     transition: all 1s ease;
 }

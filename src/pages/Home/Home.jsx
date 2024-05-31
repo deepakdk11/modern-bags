@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Home.css"
+import ImageSlider from "../../components/Image Slider/ImageSlider";
 
-const Home = () => {
+const Home = ({images}) => {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <ImageSlider images={images} />
     </div>
   )
 }
