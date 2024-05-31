@@ -3,6 +3,7 @@ import "./Navbar.css"
 import { FaSearch } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"
 
 const Navbar = () => {
 
@@ -12,21 +13,54 @@ const Navbar = () => {
 
         <nav>
             <div className="title">
-                <p>Modern Bags</p>
+                <img src={logo} alt="logo" />
             </div>
             <div className="menu">
                 <ul>
-                    <li  onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""} ><Link to="/">Home</Link></li>
-                    <li onClick={() => setMenu("categories")} className={menu === "categories" ? "active" : ""} >Categories</li>
-                    <li onClick={() => setMenu("brands")} className={menu === "brands" ? "active" : ""} >Top Brands</li>
-                    <li onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""} >Contact</li>
+                    <li
+                        onClick={() => setMenu("home")}
+                        className={menu === "home" ? "active" : ""}>
+                        <Link to="/">Home</Link>
+                    </li>
+
+                    <li
+                        onClick={() => setMenu("categories")}
+                        className={menu === "categories" ? "active" : ""}>
+                        Categories
+                    </li>
+
+                    <li
+                        onClick={() => setMenu("brands")}
+                        className={menu === "brands" ? "active" : ""}>
+                        Top Brands
+                    </li>
+                    
+                    <li
+                        onClick={() => setMenu("contact")}
+                        className={menu === "contact" ? "active" : ""}>
+                        Contact
+                    </li>
+
                 </ul>
             </div>
             <div className="add-cart">
-                <FaSearch role="button" size={30} style={{cursor:"pointer"}} />
-                <Link to="/cart"><FaCartArrowDown role="button" size={30} style={{padding : "0px 20px", cursor: "pointer"}} /> </Link> 
-                {/* <button className="search">Search</button> */}
-                {/* <button className="cart">cart</button> */}
+
+                <FaSearch
+                    role="button"
+                    className="icons"
+                    size={20}
+                    style={{cursor:"pointer", paddingTop: "8px"}}
+                />
+
+                <Link to="/cart">
+                    <FaCartArrowDown
+                        role="button"
+                        className="icons"
+                        size={20}
+                        style={{padding : "8px 20px 0px 20px" , cursor: "pointer"}}
+                    />
+                </Link> 
+
                 <button className="sign">Sign in</button>
             </div>
         </nav>

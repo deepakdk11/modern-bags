@@ -8,7 +8,15 @@ import Cart from "./pages/Cart/Cart.jsx";
 
 function App(){
 
-  const images = [imageBanner.imgBanner1, imageBanner.imgBanner2, imageBanner.imgBanner3, imageBanner.imgBanner4, imageBanner.imgBanner5]
+  const images = [
+    imageBanner.imgBanner1,
+    imageBanner.imgBanner2,
+    imageBanner.imgBanner3,
+    imageBanner.imgBanner4,
+    imageBanner.imgBanner5,
+    imageBanner.imgBanner6,
+    imageBanner.imgBanner7
+  ]
 
   return(
     <div>
