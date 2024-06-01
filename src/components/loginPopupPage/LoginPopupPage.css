@@ -8,15 +8,16 @@
     background-color: rgba(0, 0, 0, .4);
 }
 
-.title{
+.titles{
     display: flex;
     margin: 10px;
 }
-.title h1{
+.titles h1{
     flex: 1;
 }
-.title .icon{
+.titles .icon{
     color: rgb(70, 70, 70);
+    cursor: pointer;
 }
 
 form{
@@ -75,7 +76,6 @@ span{
 #checkbox-round {
     width: 1.3em;
     height: 1.3em;
-    background-color: white;
     border-radius: 50%;
     vertical-align: middle;
     border: 1px solid #ddd;
@@ -86,6 +86,6 @@ span{
 }
 
 #checkbox-round:checked {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid white;
     background-color: #cc6ce5;
 }

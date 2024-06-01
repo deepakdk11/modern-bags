@@ -9,7 +9,7 @@ const LoginPopupPage = ({setPopup}) => {
   return (
     <div className='popup'>
       <form className="login">
-        <div className="title">
+        <div className="titles">
             <h1>{change}</h1>
             <IoMdClose className='icon' onClick={() => setPopup(false)} size={25} />
         </div>

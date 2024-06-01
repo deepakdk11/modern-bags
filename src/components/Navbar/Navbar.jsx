@@ -1,50 +1,20 @@
 import React, { useState } from "react";
 import "./Navbar.css"
-import { FaSearch } from "react-icons/fa";
-import { FaCartArrowDown } from "react-icons/fa";
+import { FaSearch, FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png"
 import { RiHandbagLine } from "react-icons/ri";
+import Menu from "../Menu/Menu";
 
 const Navbar = ({setPopup}) => {
-
-    const [menu, setMenu] = useState("home")
 
     return(
 
         <nav>
+            <Menu />
             <div className="title">
-                {/* <img src={logo} alt="logo" /> */}
                <RiHandbagLine size={25} /> <p>  Modern Bags</p>
             </div>
-            <div className="menu">
-                <ul>
-                    <li
-                        onClick={() => setMenu("home")}
-                        className={menu === "home" ? "active" : ""}>
-                        <Link to="/">Home</Link>
-                    </li>
-
-                    <li
-                        onClick={() => setMenu("categories")}
-                        className={menu === "categories" ? "active" : ""}>
-                        Categories
-                    </li>
-
-                    <li
-                        onClick={() => setMenu("brands")}
-                        className={menu === "brands" ? "active" : ""}>
-                        Top Brands
-                    </li>
-                    
-                    <li
-                        onClick={() => setMenu("contact")}
-                        className={menu === "contact" ? "active" : ""}>
-                        Contact
-                    </li>
-
-                </ul>
-            </div>
+            
             <div className="add-cart">
 
                 <FaSearch

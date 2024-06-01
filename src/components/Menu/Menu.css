@@ -1,0 +1,39 @@
+.menu{
+    padding: 0px 10px;
+}
+
+.menu ul{
+    display: flex;
+    gap: 20px;
+    background-color: #cc6ce5;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;  
+    
+}
+
+
+li{
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.menu .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+    .menu ul{
+        flex-direction: column;
+        background-color: #cc6ce5;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .menu .active{
+        border-bottom: 2px solid white;
+    }
+}
