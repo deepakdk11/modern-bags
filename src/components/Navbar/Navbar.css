@@ -5,6 +5,7 @@ nav{
     width: 80%;
     margin: 10px auto;
     /* padding: 5px 40px; */
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
@@ -14,8 +15,20 @@ nav{
     /* color: white; */
 }
 
-.title img{
+/* .title img{
     width: 150px;
+} */
+
+.title{
+    color: #cc6ce5;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.title p{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .menu{
@@ -47,6 +60,7 @@ li{
 .add-cart{
     margin: 0px 0px;
     display: flex;
+    align-items: center;
 
 }
 

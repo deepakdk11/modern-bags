@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
+import { RiHandbagLine } from "react-icons/ri";
 
 const Navbar = ({setPopup}) => {
 
@@ -13,7 +14,8 @@ const Navbar = ({setPopup}) => {
 
         <nav>
             <div className="title">
-                <img src={logo} alt="logo" />
+                {/* <img src={logo} alt="logo" /> */}
+               <RiHandbagLine size={25} /> <p>  Modern Bags</p>
             </div>
             <div className="menu">
                 <ul>
@@ -49,7 +51,7 @@ const Navbar = ({setPopup}) => {
                     role="button"
                     className="icons"
                     size={20}
-                    style={{cursor:"pointer", paddingTop: "8px"}}
+                    style={{cursor:"pointer"}}
                 />
 
                 <Link to="/cart">
@@ -57,7 +59,7 @@ const Navbar = ({setPopup}) => {
                         role="button"
                         className="icons"
                         size={20}
-                        style={{padding : "8px 20px 0px 20px" , cursor: "pointer"}}
+                        style={{padding : "0px 20px 0px 20px" , cursor: "pointer"}}
                     />
                 </Link> 
 
