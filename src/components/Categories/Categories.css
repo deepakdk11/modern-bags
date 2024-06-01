@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    margin: 40px auto;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container h1{
+    text-align: center;
+}
+.container p{
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+}
+.smallContainer img{
+    width: 200px;
+    height: 170px;      
+    padding: 10px ;
+}
+
+.mapList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+    overflow-x: scroll;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.mapList::-webkit-scrollbar{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .container h1{
+        font-size: x-large;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    .smallContainer p{
+        font-size: 14px;
+    }
+    .smallContainer img{
+        width: 120px;
+        height: 100px;      
+        padding: 10px ;
+    }
+    
+}

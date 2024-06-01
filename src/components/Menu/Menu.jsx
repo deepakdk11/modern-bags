@@ -28,7 +28,7 @@ const Menu = () => {
                     <li
                         onClick={() => setMenu("categories")}
                         className={menu === "categories" ? "active" : ""}>
-                        Categories
+                        <a href="#container">categories</a>
                     </li>
 
                     <li

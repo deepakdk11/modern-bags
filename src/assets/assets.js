@@ -6,6 +6,16 @@ import imgBanner5 from "./banner/imageBanner5.jpg"
 import imgBanner6 from "./banner/imageBanner6.jpg"
 import imgBanner7 from "./banner/imageBanner7.jpg"
 
+// ------------categoryImages-----------------
+import category1 from "./category/schoolBag.png"
+import category2 from "./category/collegeBag.png"
+import category3 from "./category/laptopBag.png"
+import category4 from "./category/handBag.png"
+import category5 from "./category/travelBag.jpg"
+import category6 from "./category/sportsBag.png"
+import category7 from "./category/trekkingBag.png"
+
+
 export const imageBanner = {
     imgBanner1,
     imgBanner2,
@@ -15,3 +25,34 @@ export const imageBanner = {
     imgBanner6,
     imgBanner7
 }
+
+export const categories = [
+    {
+        categoryName : "School Bag",
+        categoryImg : category1
+    },
+    {
+        categoryName : "College Bag",
+        categoryImg : category2
+    },
+    {
+        categoryName : "Laptop Bag",
+        categoryImg : category3
+    },
+    {
+        categoryName : "Hand Bag",
+        categoryImg : category4
+    },
+    {
+        categoryName : "Travel Bag",
+        categoryImg : category5
+    },
+    {
+        categoryName : "Sports Bag",
+        categoryImg : category6
+    },
+    {
+        categoryName : "Trekking Bag",
+        categoryImg : category7
+    },
+]
