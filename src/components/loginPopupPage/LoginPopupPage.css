@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-form{
+.login{
     font-family: "Josefin Sans", sans-serif;
     font-size: 14px;
     padding: 10px;
@@ -32,23 +32,23 @@ form{
     border-radius: 5px;
 }
 
-form .input-container{
+.login .input-container{
     display: flex;
     flex-direction: column;
 }
 
-form input{
+.login input{
     margin: 10px;
     padding: 10px;
     outline: none;
     border-radius: 5px;
     border: 1px solid rgb(99, 99, 99);
 }
-form input:focus{
+.login input:focus{
     outline: none;
 }
 
-button{
+.login button{
     margin: 10px;
     padding: 10px;
     border: 0;

@@ -27,9 +27,9 @@ const ImageSlider = ({images}) => {
 
     return(
         <div className="image-slider">
-            <FaChevronLeft size={30} onClick={decrease} />
+            <FaChevronLeft size={30} onClick={decrease} style={{cursor: "pointer"}} />
             <img src={images[number]} alt="image" />
-            <FaChevronRight size={30} onClick={increase} />
+            <FaChevronRight size={30} onClick={increase} style={{cursor: "pointer"}} />
         </div>
         
     );

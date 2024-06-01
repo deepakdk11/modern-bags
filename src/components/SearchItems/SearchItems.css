@@ -1,0 +1,17 @@
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    padding: 5px;
+    border: 1px solid #cc6ce5;
+    border-radius: 4px;
+    font-family: "Outfit", sans-serif;
+}
+
+.search:focus{
+    outline: none;
+}

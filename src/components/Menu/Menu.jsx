@@ -10,7 +10,13 @@ const Menu = () => {
 
   return (
     <>
-      <RiMenu2Fill className='menu-icon' onClick={() => setToggle(!toggle)} size={30} style={{cursor: "pointer"}} />
+      <RiMenu2Fill
+        className='menu-icon'
+        onClick={() => setToggle(!toggle)}
+        size={30}
+        style={{cursor: "pointer"}}
+      />
+
       <div className="menu">
                 { toggle && (<ul>
                     <li

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Navbar.css"
-import { FaSearch, FaCartArrowDown } from "react-icons/fa";
+import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { RiHandbagLine } from "react-icons/ri";
 import Menu from "../Menu/Menu";
+import SearchItems from "../SearchItems/SearchItems";
 
 const Navbar = ({setPopup}) => {
 
@@ -17,12 +18,7 @@ const Navbar = ({setPopup}) => {
             
             <div className="add-cart">
 
-                <FaSearch
-                    role="button"
-                    className="icons"
-                    size={20}
-                    style={{cursor:"pointer"}}
-                />
+                <SearchItems />
 
                 <Link to="/cart">
                     <FaCartArrowDown
