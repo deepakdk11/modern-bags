@@ -49,6 +49,12 @@
     display: none;
 }
 
+hr{
+    background-color: #000000;
+    color: #000000;
+    margin: 10px 0px 10px 0px;
+}
+
 @media only screen and (max-width: 600px){
     .container h1{
         font-size: x-large;

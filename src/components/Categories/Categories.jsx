@@ -22,6 +22,7 @@ const Categories = ({item, setItem}) => {
           );
         })}
       </div>
+      <hr />
     </div>
   );
 };
