@@ -1,0 +1,118 @@
+.mainContainer{
+    padding: 15px 0px 15px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 11px #707070; 
+    background-color: white;
+    text-align: center;
+    transition: .3s;
+    animation: fadeIn 1s;
+}
+
+.mainContainer:hover{
+    box-shadow: 0 0 21px #cc6ce5;
+}
+
+.imgContainer img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.bagName{
+    font-size: 17px;
+    padding: 5px 0px 5px 0px;
+    font-weight: bold;
+    color: #383838;
+}
+
+.rating{
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating .star{
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(40, 180, 40);
+    padding: 1px 2px 1px 2px ;
+}
+
+
+.priceContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.priceContainer .offerPrice{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px ;
+    font-weight: 600;
+
+}
+
+.priceContainer .MRP{
+    text-decoration: line-through;
+    color: #707070;
+}
+
+.discount{
+    background-color: rgb(247, 72, 72);
+    padding: 2px 4px 0px 4px;
+    border-radius: 3px;
+    color: white;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    font-size: 14px;
+}
+
+.bagInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.bagInfo button{
+    border: 0;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #eeeee6;
+    color: white;
+    background-color: #cc6ce5;
+    cursor: pointer;
+    transition: all .3s;
+}
+.bagInfo button:hover{
+    width: 90%;
+}
+
+@media only screen and (max-width: 600px){
+    .imgContainer img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .bagName{
+        font-size: 14px;
+    }
+    .rating{
+        font-size: 14px;
+    }
+    .priceContainer{
+        font-size: 14px;
+    }
+    .discount{
+        font-size: 12px;
+    }
+}

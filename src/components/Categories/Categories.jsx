@@ -15,8 +15,8 @@ const Categories = ({item, setItem}) => {
       <div className="mapList">
         {categories.map((lists, index) => {
           return (
-            <div onClick={() => setItem(prev => prev === lists.categoryName ? "All" : lists.categoryName)} key={index} className="smallContainer">
-              <img src={lists.categoryImg} alt={lists.categoryName} className={item === lists.categoryName ? "active" : ""} />
+            <div onClick={() => setItem(prev => prev === lists.categoryName ? "All" : lists.categoryName)} key={index} id={item === lists.categoryName ? "active" : ""} className="smallContainer">
+              <img src={lists.categoryImg} alt={lists.categoryName} />
               <p >{lists.categoryName}</p>
             </div>
           );

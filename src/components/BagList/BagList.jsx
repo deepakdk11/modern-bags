@@ -8,18 +8,18 @@ const BagList = ({id, name, discount, star, rating, price, MRP, image}) => {
             <img src={image} alt={name} />
         </div>
         <div className="bagInfo">
-            <p>{name}</p>
+            <p className='bagName'>{name}</p>
             <div className="rating">
-                <p>{star}</p>
-                <p>{rating}</p>
+                <p className='star'>{star}</p>
+                <p className='personRating'>({rating})</p>
             </div>
             <div className="priceContainer">
-                <p>{price}</p>
-                <p>{MRP}</p>
+                <p className='offerPrice'>{price}</p>
+                <p className='MRP'>{MRP}</p>
             </div>
             <button>Add To Cart</button>
         </div>
-      <p>{discount}</p>
+      <p className='discount'>Sale | {discount}</p>
     </div>
   )
 }

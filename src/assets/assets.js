@@ -11,7 +11,7 @@ import category1 from "./category/schoolBag.png"
 import category2 from "./category/collegeBag.png"
 import category3 from "./category/laptopBag.png"
 import category4 from "./category/handBag.png"
-import category5 from "./category/travelBag.jpg"
+import category5 from "./category/travelBag.png"
 import category6 from "./category/sportsBag.png"
 import category7 from "./category/trekkingBag.png"
 
@@ -140,7 +140,7 @@ export const categories = [
 export const bagItems = [
     {
         id: "1",
-        name: "spiderman School Bag",
+        name: "Spiderman School Bag",
         image: schoolBag1 ,
         price: "₹550",
         item: "School Bag",

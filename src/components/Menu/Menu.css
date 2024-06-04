@@ -6,7 +6,9 @@
     display: flex;
     gap: 20px;
     background-color: #cc6ce5;
+    /* background-color: #eeeee6; */
     color: white;
+    /* color: rgb(63, 63, 63); */
     padding: 10px;
     border-radius: 10px;  
     
@@ -17,6 +19,7 @@ li{
     text-align: center;
     list-style: none;
     cursor: pointer;
+    /* filter: drop-shadow(0 5px 10px #0009); */
     transition: all 1s ease;
 }
 
@@ -29,11 +32,13 @@ li{
     .menu ul{
         flex-direction: column;
         background-color: #cc6ce5;
+        /* background-color: #eeeee6; */
         color: white;
+        /* color:rgb(63, 63, 63) ; */
         padding: 10px;
         border-radius: 10px;
     }
     .menu .active{
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid rgb(255, 255, 255);
     }
 }
