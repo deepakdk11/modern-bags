@@ -1,3 +1,8 @@
+import delivery from "./delivery.png"
+import genuine from "./genuine.png"
+import payment from "./payment.png"
+import warranty from "./warranty.png"
+
 import imgBanner1 from "./banner/imageBanner1.jpg"
 import imgBanner2 from "./banner/imageBanner2.jpg"
 import imgBanner3 from "./banner/imageBanner3.jpg"
@@ -94,6 +99,12 @@ import trekkingBag9 from "./feeds/trekkingBag9.jpg"
 import trekkingBag10 from "./feeds/trekkingBag10.jpg"
 
 
+export const value = {
+    delivery,
+    genuine,
+    warranty,
+    payment
+}
 
 export const imageBanner = {
     imgBanner1,
