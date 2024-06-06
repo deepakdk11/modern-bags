@@ -15,7 +15,7 @@
 }
 
 
-li{
+.menu li{
     text-align: center;
     list-style: none;
     cursor: pointer;

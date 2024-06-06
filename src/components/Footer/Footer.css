@@ -1,0 +1,50 @@
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.footer-1st-container{
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join{
+    border: 1px solid black;
+}
+.join h3{
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+}
+.join p{
+    margin: 10px 0px 10px 0px;
+}
+.join input{
+    margin: 10px 0px 10px 0px;
+    padding: 7px;
+}
+.join button{
+    outline: none;
+    padding: 7px;
+}
+
+
+.iconLogo{
+    border: 1px solid black;
+}
+
+.iconsSocial{
+    border: 1px solid black;
+}
+
+.logoImg{
+    border: 1px solid black;
+}
+
+.logoImg img{
+    width: 100px;
+    height: 100px;
+}
