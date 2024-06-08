@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./BagList.css"
+import { DataContext } from '../../Context/DataContext'
 
 const BagList = ({id, name, discount, star, rating, price, MRP, image}) => {
+
+  const {addCart, addToCart} = useContext(DataContext)
+
   return (
     <div className='mainContainer'>
         <div className="imgContainer">
@@ -17,7 +21,7 @@ const BagList = ({id, name, discount, star, rating, price, MRP, image}) => {
                 <p className='offerPrice'>{price}</p>
                 <p className='MRP'>{MRP}</p>
             </div>
-            <button>Add To Cart</button>
+            <button onClick={() => addToCart(id)}>Add To Cart</button>
         </div>
       <p className='discount'>Sale | {discount}</p>
     </div>

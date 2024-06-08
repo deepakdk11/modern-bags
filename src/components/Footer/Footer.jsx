@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Footer.css'
 import { download } from '../../assets/assets';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+  const [addClass, setAddClass] = useState("")
   return (
     <div className='footerContainer'>
       <div className='footer-1st-container'>
@@ -14,16 +15,16 @@ const Footer = () => {
         </div>
         <div className='iconLogo'>
           <div className='iconsSocial'>
-            <FaFacebook />
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedin />
-            <FaWhatsapp />
-            <FaYoutube />
+            <FaFacebook className='social facebook' size={35} />
+            <FaInstagram className='social instagram' size={35} />
+            <FaTwitter className='social twitter'size={35} />
+            <FaLinkedin className='social linkedin' size={35} />
+            <FaWhatsapp className='social whatsapp' size={35} />
+            <FaYoutube className='social youtube' size={35} />
           </div>
           <div className='logoImg'>
-             <img src={download.playStore} alt="Playstore png" />
-             <img src={download.appStore} alt="App Store png" />
+             <img className='playstore' src={download.playStore} alt="Playstore png" />
+             <img className='appstore' src={download.appStore} alt="App Store png" />
           </div>
         </div>
       </div>
@@ -33,8 +34,8 @@ const Footer = () => {
           <h1>Modern Bags</h1>
         </div>
         <div className='cat'>
-          <h4>CATEGORIES</h4>
-          <ul>
+          <h4 onClick={() => setAddClass("categ")}>CATEGORIES <i className="arrow down"></i></h4>
+          <ul className={addClass==="categ" ? "newClass" : ""} >
             <li>School Bags</li>
             <li>College Bags</li>
             <li>Laptop Bags</li>
@@ -44,8 +45,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className='policies'>
-          <h4>POLICIES</h4>
-          <ul>
+          <h4 onClick={() => setAddClass("pol")} >POLICIES<i className="arrow down"></i></h4>
+          <ul className={addClass==="pol" ? "newClass" : ""}>
             <li>Privacy Policy</li>
             <li>Cancellation, Return & Refund Policy</li>
             <li>Return & Exchange</li>
@@ -54,8 +55,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className='account'>
-          <h4>ACCOUNT</h4>
-          <ul>
+          <h4 onClick={() => setAddClass("acc")}>ACCOUNT<i className="arrow down"></i></h4>
+          <ul className={addClass==="acc" ? "newClass" : ""}>
             <li>Track Order</li>
             <li>Sign In</li>
             <li>Shop All Products</li>

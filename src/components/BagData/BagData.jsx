@@ -10,6 +10,7 @@ const BagData = ({item}) => {
       <h2>All Categories Bags</h2>
       <div className='bagData'>
         {bagItems.map((list, index) => {
+          if (item==="All" || item==list.item) {
             return (
               <BagList
                 key={index}
@@ -23,6 +24,8 @@ const BagData = ({item}) => {
                 rating={list.rating} 
               />
             )
+          }
+            
         })}
       </div>
     </div>
