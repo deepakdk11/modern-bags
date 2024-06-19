@@ -1,10 +1,13 @@
 import React, { useContext } from 'react'
 import "./BagList.css"
-import { DataContext } from '../../Context/DataContext'
+import { FaTrashCanArrowUp } from "react-icons/fa6";
+import { IoBagAdd } from "react-icons/io5";
+import { DataContext } from '../../Context/DataContext';
 
 const BagList = ({id, name, discount, star, rating, price, MRP, image}) => {
 
-  const {addCart, addToCart} = useContext(DataContext)
+  const {cart,addToCart,removeToCart} = useContext(DataContext)
+
 
   return (
     <div className='mainContainer'>
@@ -21,7 +24,17 @@ const BagList = ({id, name, discount, star, rating, price, MRP, image}) => {
                 <p className='offerPrice'>{price}</p>
                 <p className='MRP'>{MRP}</p>
             </div>
-            <button onClick={() => addToCart(id)}>Add To Cart</button>
+            <div className='cartBtn'>
+              {
+                !cart[id]
+                ?<button className='add' onClick={() => addToCart(id)}>Add to cart</button>
+                : <div className='add-remove'>
+                    <IoBagAdd className='addBtn' onClick={() => addToCart(id)}/>
+                    <p>{cart[id]}</p>
+                    <FaTrashCanArrowUp className='remove' onClick={() => removeToCart(id)} />
+                  </div>
+              }
+            </div>
         </div>
       <p className='discount'>Sale | {discount}</p>
     </div>

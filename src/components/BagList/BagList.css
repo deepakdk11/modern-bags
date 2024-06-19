@@ -87,21 +87,44 @@
     width: 100%;
 }
 
-.bagInfo button{
+.bagInfo .add{
     border: 0;
-    width: 80%;
+    width: 70%;
     border-radius: 5px;
     padding: 10px;
+    margin: 0px 10px 0px 0px;
     background-color: #eeeee6;
     color: white;
     background-color: #cc6ce5;
     cursor: pointer;
     transition: all .3s;
 }
-.bagInfo button:hover{
-    width: 90%;
+.bagInfo .add:hover{
+    width: 75%;
 }
 
+.cartBtn{
+    width: 80%;
+    display: flex;
+    justify-content: center;  
+}
+.remove, .addBtn{
+    border-radius: 2px;
+    background-color:#eeeee6 ;
+    padding: 10px;
+}
+.remove:hover{
+    color: red;
+}
+.addBtn:hover{
+    color: rgb(90, 186, 231);
+}
+.add-remove{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 @media only screen and (max-width: 600px){
     .imgContainer img{
         width: 100px;

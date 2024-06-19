@@ -9,6 +9,7 @@ import LoginPopupPage from "./components/loginPopupPage/LoginPopupPage.jsx";
 
 function App(){
 
+
   const [popup, setPopup] = useState(false)
 
   const images = [

@@ -4,28 +4,32 @@ import { bagItems } from "../assets/assets.js"
 export const DataContext = createContext(null)
 
 export const DataContextProvider = (props) => {
-
-    const [addCart, setAddCart] = useState({})
+    
+    const [cart, setCart] = useState({});
 
     const addToCart = (listId) => {
-        if(!addCart[listId]){
-            setAddCart( (prev) => ({...prev, [listId]:1}) )
+        if (!cart[listId]) {
+            setCart((prev) => ({...prev,[listId]:1}))
         }
         else{
-            setAddCart( (prev) => ({...prev, [listId]:prev[listId]}+1) )
+            setCart((prev) => ({...prev,[listId]:prev[listId]+1}))
         }
+    }
 
+    const removeToCart = (listId) => {
+        setCart((prev) => ({...prev,[listId]:prev[listId]-1}))
     }
 
     useEffect(() => {
-        console.log(addCart)
-
-    },[addCart])
+        console.log(cart)
+    },[cart])
 
     const contextValue = {
       bagItems,
-      addCart,
+      cart,
+      setCart,
       addToCart,
+      removeToCart
     }
 
     return(
