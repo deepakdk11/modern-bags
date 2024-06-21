@@ -89,7 +89,7 @@
 
 .bagInfo .add{
     border: 0;
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
     padding: 10px;
     margin: 0px 10px 0px 0px;
@@ -100,7 +100,7 @@
     transition: all .3s;
 }
 .bagInfo .add:hover{
-    width: 75%;
+    width: 90%;
 }
 
 .cartBtn{

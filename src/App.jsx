@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx"
 import Cart from "./pages/Cart/Cart.jsx";
 import LoginPopupPage from "./components/loginPopupPage/LoginPopupPage.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 
 function App(){
@@ -33,7 +34,8 @@ function App(){
           <Route path="/" element={<Home images={images} />} />
           <Route path="/cart" element={ <Cart /> }/>
         </Routes>
-      </div>    
+      </div>  
+      <Footer />  
     </>
 
   );

@@ -160,221 +160,221 @@ export const bagItems = [
         id: 1,
         name: "Spiderman School Bag",
         image: schoolBag1 ,
-        price: "₹550",
+        price: 550,
         item: "School Bag",
         discount: "25%",
         star: "4.2★",
         rating:"1.5K",
-        MRP:"MRP:₹650"
+        MRP:650
     },
     {
         id: 2,
         name: "Cars School Bag",
         image: schoolBag2 ,
-        price: "₹500",
+        price: 500,
         item: "School Bag",
         discount: "20%",
         star: "4.0★",
         rating:"1.2K",
-        MRP:"MRP:₹600"
+        MRP:600
     },
     {
         id: 3,
         name: "Black Panther School Bag",
         image: schoolBag3 ,
-        price: "₹580",
+        price: 580,
         item: "School Bag",
         discount: "35%",
         star: "4.5★",
         rating:"3.5K",
-        MRP:"MRP:₹750"
+        MRP:750
     },
     {
         id: 4,
         name: "Ultimate Spider-Man Bag",
         image: schoolBag4 ,
-        price: "₹585",
+        price: 585,
         item: "School Bag",
         discount: "15%",
         star: "4.3★",
         rating:"2.2K",
-        MRP:"MRP:₹650"
+        MRP:650
     },
     {
         id: 5,
         name: "Grey School Bag",
         image: schoolBag5 ,
-        price: "₹650",
+        price: 650,
         item: "School Bag",
         discount: "20%",
         star: "3.9★",
         rating:"1.1K",
-        MRP:"MRP:₹750"
+        MRP:750
     },
     {
         id: 6,
         name: "Captain America School Bag",
         image: schoolBag6 ,
-        price: "₹550",
+        price: 550,
         item: "School Bag",
         discount: "25%",
         star: "4.2★",
         rating:"1.7K",
-        MRP:"MRP:₹650"
+        MRP:650
     },
     {
         id: 7,
         name: "Space School Bag",
         image: schoolBag7 ,
-        price: "₹650",
+        price: 650,
         item: "School Bag",
         discount: "30%",
         star: "4.0★",
         rating:"2.3K",
-        MRP:"MRP:₹755"
+        MRP:755
     },
     {
         id: 8,
         name: "Space Suit School Bag",
         image: schoolBag8 ,
-        price: "₹625",
+        price: 625,
         item: "School Bag",
         discount: "15%",
         star: "3.5★",
         rating:"555",
-        MRP:"MRP:₹725"
+        MRP:725
     },
     {
         id: 9,
         name: "Vegeta School Bag",
         image: schoolBag9 ,
-        price: "₹675",
+        price: 675,
         item: "School Bag",
         discount: "15%",
         star: "4.7★",
         rating:"5.5K",
-        MRP:"MRP:₹755"
+        MRP:755
     },
     {
         id: 10,
         name: "Animal Baby School Bag",
         image: schoolBag10 ,
-        price: "₹500",
+        price: 500,
         item: "School Bag",
         discount: "10%",
         star: "3.2★",
         rating:"1.3K",
-        MRP:"MRP:₹600"
+        MRP:600
     },
     {
         id: 11,
         name: "Sky Bag for College",
         image: collegeBag1 ,
-        price: "₹800",
+        price: 800,
         item: "College Bag",
         discount: "25%",
         star: "4.4★",
         rating:"2.5K",
-        MRP:"MRP:₹1150"
+        MRP:1150
     },
     {
         id: 12,
         name: "Safari Bag for College",
         image: collegeBag2 ,
-        price: "₹850",
+        price: 850,
         item: "College Bag",
         discount: "25%",
         star: "4.2★",
         rating:"1.5K",
-        MRP:"MRP:₹650"
+        MRP:650
     },
     {
         id: 13,
         name: "Gear Bag for College",
         image: collegeBag3 ,
-        price: "₹750",
+        price: 750,
         item: "College Bag",
         discount: "15%",
         star: "3.9★",
         rating:"963",
-        MRP:"MRP:₹850"
+        MRP:850
     },
     {
         id: 14,
         name: "Gray College Bag",
         image: collegeBag4 ,
-        price: "₹500",
+        price: 500,
         item: "College Bag",
         discount: "35%",
         star: "3.7★",
         rating:"1.7K",
-        MRP:"MRP:₹850"
+        MRP:850
     },
     {
         id: 15,
         name: "Casual college bag",
         image: collegeBag5 ,
-        price: "₹620",
+        price: 620,
         item: "College Bag",
         discount: "10%",
         star: "4.0★",
         rating:"1.1K",
-        MRP:"MRP:₹750"
+        MRP:750
     },
     {
         id: 16,
         name: "Gear college bag",
         image: collegeBag6 ,
-        price: "₹750",
+        price: 750,
         item: "College Bag",
         discount: "20%",
         star: "3.2★",
         rating:"657",
-        MRP:"MRP:₹850"
+        MRP:850
     },
     {
         id: 17,
         name: "Gear college bag",
         image: collegeBag7 ,
-        price: "₹900",
+        price: 900,
         item: "College Bag",
         discount: "35%",
         star: "4.5★",
         rating:"2.5K",
-        MRP:"MRP:₹1250"
+        MRP:1250
     },
     {
         id: 18,
         name: "Gear college bag",
         image: collegeBag8 ,
-        price: "₹700",
+        price: 700,
         item: "College Bag",
         discount: "40%",
         star: "4.2★",
         rating:"3.3K",
-        MRP:"MRP:₹1250"
+        MRP:1250
     },
     {
         id: 19,
         name: "Casual college bag",
         image: collegeBag9 ,
-        price: "₹800",
+        price: 800,
         item: "College Bag",
         discount: "15%",
         star: "4.3★",
         rating:"3.2K",
-        MRP:"MRP:₹950"
+        MRP:950
     },
     {
         id: 20,
         name: "Casual college bag",
         image: collegeBag10 ,
-        price: "₹600",
+        price: 600,
         item: "College Bag",
         discount: "10%",
         star: "3.7★",
         rating:"2.3K",
-        MRP:"MRP:₹750"
+        MRP:750
     },
     {
         id: 21,
@@ -391,100 +391,100 @@ export const bagItems = [
         id: 22,
         name: "Casual Laptop bag",
         image: laptopBag2 ,
-        price: "₹1000",
+        price: 1000,
         item: "Laptop Bag",
         discount: "10%",
         star: "4.1★",
         rating:"1.2K",
-        MRP:"MRP:₹1100"
+        MRP:1100
     },
     {
         id: 23,
         name: "Urban Laptop bag",
         image: laptopBag3 ,
-        price: "₹1150",
+        price: 1150,
         item: "Laptop Bag",
         discount: "25%",
         star: "4.0★",
         rating:"2.2K",
-        MRP:"MRP:₹1350"
+        MRP:1350
     },
     {
         id: 24,
         name: "Casual Laptop bag",
         image: laptopBag4 ,
-        price: "₹950",
+        price: 950,
         item: "Laptop Bag",
         discount: "15%",
         star: "3.4★",
         rating:"654",
-        MRP:"MRP:₹1150"
+        MRP:1150
     },
     {
         id: 25,
         name: "Bange Laptop bag",
         image: laptopBag5 ,
-        price: "₹1350",
+        price: 1350,
         item: "Laptop Bag",
         discount: "25%",
         star: "4.0★",
         rating:"1.7K",
-        MRP:"MRP:₹1550"
+        MRP:1550
     },
     {
         id: 26,
         name: "Hunter Laptop bag",
         image: laptopBag6 ,
-        price: "₹1450",
+        price: 1450,
         item: "Laptop Bag",
         discount: "10%",
         star: "4.0★",
         rating:"2K",
-        MRP:"MRP:₹1550"
+        MRP:1550
     },
     {
         id: 27,
         name: "Arctic Hunter Laptop bag",
         image: laptopBag7 ,
-        price: "₹1200",
+        price: 1200,
         item: "Laptop Bag",
         discount: "33%",
         star: "3.4★",
         rating:"2.9K",
-        MRP:"MRP:₹1550"
+        MRP:1550
     },
     {
         id: 28,
         name: "Arctic Hunter Laptop bag",
         image: laptopBag8 ,
-        price: "₹1600",
+        price: 1600,
         item: "Laptop Bag",
         discount: "15%",
         star: "4.9★",
         rating:"5.5K",
-        MRP:"MRP:₹1550"
+        MRP:1550
     },
     {
         id: 29,
         name: "BG Laptop bag",
         image: laptopBag9 ,
-        price: "₹1200",
+        price: 1200,
         item: "Laptop Bag",
         discount: "20%",
         star: "3.9★",
         rating:"2.7K",
-        MRP:"MRP:₹1400"
+        MRP:1400
     },
     {
         id: 30,
         name: "Jaden Laptop bag",
         image: laptopBag10 ,
-        price: "₹1300",
+        price: 1300,
         item: "Laptop Bag",
         discount: "10%",
         star: "4.8★",
         rating:"4.5K",
-        MRP:"MRP:₹1450"
+        MRP:1450
     },
     
 ]

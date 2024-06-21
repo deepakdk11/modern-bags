@@ -21,8 +21,8 @@ const BagList = ({id, name, discount, star, rating, price, MRP, image}) => {
                 <p className='personRating'>({rating})</p>
             </div>
             <div className="priceContainer">
-                <p className='offerPrice'>{price}</p>
-                <p className='MRP'>{MRP}</p>
+                <p className='offerPrice'>₹{price}</p>
+                <p className='MRP'>MRP:₹{MRP}</p>
             </div>
             <div className='cartBtn'>
               {

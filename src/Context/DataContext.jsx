@@ -20,16 +20,48 @@ export const DataContextProvider = (props) => {
         setCart((prev) => ({...prev,[listId]:prev[listId]-1}))
     }
 
-    useEffect(() => {
-        console.log(cart)
-    },[cart])
+    const cartTotalAmount = () => {
+        let totalAmount = 0;
+        for (const list in cart) {
+            if (cart[list] > 0) {
+                let listItem = bagItems.find((pro) => pro.id.toString() === list);
+                totalAmount += listItem.price * cart[list];
+            }   
+        }
+        return totalAmount;
+    }
+
+    const cartTotalMRPAmount = () => {
+        let totalAmount = 0;
+        for (const list in cart) {
+            if (cart[list] > 0) {
+                let listItem = bagItems.find((pro) => pro.id.toString() === list);
+                totalAmount += listItem.MRP * cart[list];
+            }   
+        }
+        return totalAmount;
+    }
+
+    const cartTotalDiscountAmount = () => {
+        let totalAmount = 0;
+        for (const list in cart) {
+            if (cart[list] > 0) {
+                let listItem = bagItems.find((pro) => pro.id.toString() === list);
+                totalAmount += listItem.MRP - listItem.price;
+            }   
+        }
+        return totalAmount;
+    }
 
     const contextValue = {
-      bagItems,
       cart,
       setCart,
+      bagItems,
       addToCart,
-      removeToCart
+      removeToCart,
+      cartTotalAmount,
+      cartTotalMRPAmount,
+      cartTotalDiscountAmount
     }
 
     return(
