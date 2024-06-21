@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Cart.css";
 import { DataContext } from "../../Context/DataContext";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const {
@@ -34,7 +35,7 @@ const Cart = () => {
                   <img src={list.image} alt={list.name} />
                   <p>{list.name}</p>
                 </div>
-                <p>{list.price}</p>
+                <p>₹{list.price}</p>
                 <div className="add-plus-btn">
                   <FaPlus
                     className="plus-minus"
@@ -46,7 +47,7 @@ const Cart = () => {
                     onClick={() => removeToCart(list.id)}
                   />
                 </div>
-                <p>{list.price * cart[list.id]}</p>
+                <p>₹{list.price * cart[list.id]}</p>
               </div>
             );
           }
@@ -54,7 +55,7 @@ const Cart = () => {
       </div>
       <div className="cart-last-container">
         <div className="promo-container">
-          <p>If have a promo code, Enter it here</p>
+          <h3>If have a promo code, Enter it here</h3>
           <div className="promo-input">
             <input type="text" name="promo code" />
             <button className="promo-btn">Apply</button>
@@ -62,23 +63,26 @@ const Cart = () => {
         </div>
         <div className="total-amount-container">
           <h3>Total Amount</h3>
-          <div className="mrp-price">
+          <div className="mrp-price sameClass">
             <p>MRP</p>
-            <p>{cartTotalMRPAmount()}</p>
+            <p>₹{cartTotalMRPAmount()}</p>
           </div>
-          <div className="discount-price">
+          <hr />
+          <div className="discount-price sameClass">
             <p>Discount</p>
-            <p>{cartTotalDiscountAmount()}</p>
+            <p>₹{cartTotalDiscountAmount()}</p>
           </div>
-          <div className="delivery-fee">
+          <hr />
+          <div className="delivery-fee sameClass">
             <p>Delivery</p>
-            <p>Free</p>
+            <p style={{color:"green"}}>Free</p>
           </div>
-          <div className="total">
+          <hr />
+          <div className="total sameClass">
             <p>Total</p>
-            <p>{cartTotalAmount()}</p>
+            <p>₹{cartTotalAmount()}</p>
           </div>
-          <button className="checkout">PROCEED TO PAY</button>
+          <Link to={"/order"}><button className="checkout">PROCEED TO PAY</button></Link> 
         </div>
       </div>
     </div>

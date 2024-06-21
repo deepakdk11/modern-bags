@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import "./Navbar.css"
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";

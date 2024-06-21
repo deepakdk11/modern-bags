@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home.jsx"
 import Cart from "./pages/Cart/Cart.jsx";
 import LoginPopupPage from "./components/loginPopupPage/LoginPopupPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder.jsx";
 
 
 function App(){
@@ -33,6 +34,7 @@ function App(){
         <Routes>
           <Route path="/" element={<Home images={images} />} />
           <Route path="/cart" element={ <Cart /> }/>
+          <Route path="/order" element={ <PlaceOrder /> }/>
         </Routes>
       </div>  
       <Footer />  

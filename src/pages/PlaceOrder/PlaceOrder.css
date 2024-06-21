@@ -1,0 +1,93 @@
+.order-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 14px;
+    margin: 30px auto;
+    height: fit-content;
+}
+
+.delivery-details{
+    border-radius: 5px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    background-color: #eeeee6;
+
+}
+.delivery-details h1{
+    margin: 30px 10px;
+}
+.delivery-details .orderLogin{
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 95%;
+    padding: 10px 0px;
+    text-align: center ;
+    margin: 10px 10px;
+}
+.delivery-details input{
+    padding: 10px 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+.delivery-details input:focus{
+    outline: none;
+}
+.delivery-details #mail, .delivery-details .street, .delivery-details #phone {
+    width: 92%;
+}
+
+.shipping-method{
+    border-radius: 5px;
+    background-color: #eeeee6;
+    width: 400px;
+    padding: 5px;
+    margin: 10px;
+}
+.shipping-method h3{
+    margin: 10px;
+}
+.shipping-method label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.shipping-method img{
+    height: 40px;
+    border-radius: 5px;
+}
+.delhivery, .blueDart, .DTDC{
+    width: 85px;
+}
+
+.deliveryClass{
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.check-details{
+    display: flex;
+    align-items: center;
+}
+
+.order-last-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#total-amount-container-two{
+    width: 375px;
+}
+
+@media only screen and (max-width: 600px){
+    .order-container{
+        flex-direction: column;
+    }
+}
