@@ -1,0 +1,127 @@
+.fullView{
+    margin: 25px auto;
+    width: fit-content;
+    display: flex;
+    box-shadow: 0 0 11px #707070; 
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+.fullView-img{
+    height: fit-content;
+}
+.fullView-img img{
+    height: 500px;
+
+}
+
+.lastView{
+    display: flex;
+    flex-direction: column;
+}
+
+.lastView-price{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.lastView-price span{
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: lighter;
+    color: #707070;
+}
+
+.lastView-rating{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.lastView-rating .lastView-star{
+    background-color: rgb(40, 197, 40);
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.mrp-discount{
+    margin: 20px 0px;
+    font-size: 18px;
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.color{
+    width: fit-content;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.color img{
+    height: 80px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 10px;
+}
+
+.hex{
+    height: 26px;
+    width: fit-content;
+    border-radius: 50%;
+    border: 2px solid rgb(175, 175, 175);
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hexColor{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.lastView-btns{
+    border-radius: 5px;
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;    
+    width: 150px;
+    justify-content: space-between;
+    
+}
+
+.lastView-btns button{
+    border: 0px;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.lastView-btns p{
+    padding: 6px 20px;
+    border: 1px solid black;
+}
+
+.add-buy{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.add-buy button{
+    padding: 10px;
+    font-size: 15px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0px;
+}
+.buy-btn{
+    background-color: rgb(63, 63, 238);
+    color: white;
+}

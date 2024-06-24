@@ -16,7 +16,7 @@ const PlaceOrder = () => {
         <form action="" className='delivery-details'>
             <h1>Delivery Information</h1>
             <div className='orderLogin'>
-                <p>Do you already have account login?</p>
+                <p>Do you already have account <a href="#" style={{color:"blue"}}>login?</a></p>
             </div> 
             <input type="email" name="mail" id="mail" placeholder='Email ID' />
             <div className="first-last">
@@ -33,21 +33,21 @@ const PlaceOrder = () => {
                 <input type="text" placeholder='Country' />
             </div>
             <input type="tel" name="Phone Number" id="phone" placeholder='Mobile Number' />
-            <div className='check-details'>
-                <input type="checkbox" name="" id="" />
+            <label htmlFor='check-details-one' className='check-details'>
+                <input type="checkbox" name="" id="check-details-one" />
                 <p>Save my details for future purchase</p>
-            </div>
-            <div className='check-details'>
-                <input type="checkbox" name="" id="" />
+            </label>
+            <label htmlFor='check-details-two' className='check-details'>
+                <input type="checkbox" name="" id="check-details-two" />
                 <p>Subscribe for exclusive  offers & coupons</p>
-            </div>
+            </label>
         </form>
         <div className="order-last-container">
             <div className="shipping-method">
                 <h3>Shipping method</h3>
                 <label htmlFor="dhl" className='deliveryClass'>
-                    <input type="checkbox" name="" id="dhl" />
-                    <p>Free</p>
+                    <input type="checkbox" name="" id="dhl" defaultChecked/>
+                    <p style={{color:"green"}}>Free</p>
                     <div>
                         <p>DHL</p>
                         <p>10-12 Business Days</p>
@@ -56,7 +56,7 @@ const PlaceOrder = () => {
                 </label>
                 <label htmlFor="delhivery" className='deliveryClass'>
                     <input type="checkbox" name="Delhivery" id="delhivery" />
-                    <p>50</p>
+                    <p>₹50</p>
                     <div>
                         <p>Delhivery</p>
                         <p>5-6 Business Days</p>
@@ -65,7 +65,7 @@ const PlaceOrder = () => {
                 </label>
                 <label htmlFor="blueDart" className='deliveryClass'>
                     <input type="checkbox" name="" id="blueDart" />
-                    <p>75</p>
+                    <p>₹75</p>
                     <div>
                         <p>Blue Dart</p>
                         <p>2-3 Business Days</p>
@@ -74,7 +74,7 @@ const PlaceOrder = () => {
                 </label>
                 <label htmlFor="DTDC" className='deliveryClass'>
                     <input type="checkbox" name="DTDC" id="DTDC" />
-                    <p>100</p>
+                    <p>₹100</p>
                     <div>
                         <p>DTDC</p>
                         <p>1-2 Business Days</p>
@@ -91,7 +91,7 @@ const PlaceOrder = () => {
           <hr />
           <div className="discount-price sameClass">
             <p>Discount</p>
-            <p>₹{cartTotalDiscountAmount()}</p>
+            <p style={{color:"red"}}>-₹{cartTotalDiscountAmount()}</p>
           </div>
           <hr />
           <div className="delivery-fee sameClass">

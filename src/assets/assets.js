@@ -177,7 +177,9 @@ export const bagItems = [
         discount: "25%",
         star: "4.2★",
         rating:"1.5K",
-        MRP:650
+        MRP:650,
+        color:"Red",
+        Hex:"#d42c3b"
     },
     {
         id: 2,
@@ -188,7 +190,9 @@ export const bagItems = [
         discount: "20%",
         star: "4.0★",
         rating:"1.2K",
-        MRP:600
+        MRP:600,
+        color:"Red",
+        Hex:"#d42b2c"
     },
     {
         id: 3,
@@ -199,7 +203,9 @@ export const bagItems = [
         discount: "35%",
         star: "4.5★",
         rating:"3.5K",
-        MRP:750
+        MRP:750,
+        color:"Blue Gray",
+        Hex:"#283752"
     },
     {
         id: 4,
@@ -210,7 +216,9 @@ export const bagItems = [
         discount: "15%",
         star: "4.3★",
         rating:"2.2K",
-        MRP:650
+        MRP:650,
+        color:"Dark Blue",
+        Hex:"#253966"
     },
     {
         id: 5,
@@ -221,7 +229,9 @@ export const bagItems = [
         discount: "20%",
         star: "3.9★",
         rating:"1.1K",
-        MRP:750
+        MRP:750,
+        color:"Light Gray",
+        Hex:"#aeb0ae"
     },
     {
         id: 6,
@@ -232,7 +242,9 @@ export const bagItems = [
         discount: "25%",
         star: "4.2★",
         rating:"1.7K",
-        MRP:650
+        MRP:650,
+        color:"Blue Gray",
+        Hex:"#243b57"
     },
     {
         id: 7,
@@ -243,7 +255,9 @@ export const bagItems = [
         discount: "30%",
         star: "4.0★",
         rating:"2.3K",
-        MRP:755
+        MRP:755,
+        color:"Indigo",
+        Hex:"#303a90"
     },
     {
         id: 8,
@@ -254,7 +268,9 @@ export const bagItems = [
         discount: "15%",
         star: "3.5★",
         rating:"555",
-        MRP:725
+        MRP:725,
+        color:"Dark Blue",
+        Hex:"#083c7e"
     },
     {
         id: 9,
@@ -265,7 +281,9 @@ export const bagItems = [
         discount: "15%",
         star: "4.7★",
         rating:"5.5K",
-        MRP:755
+        MRP:755,
+        color:"Dark Gray",
+        Hex:"#2c2c30"
     },
     {
         id: 10,
@@ -276,7 +294,9 @@ export const bagItems = [
         discount: "10%",
         star: "3.2★",
         rating:"1.3K",
-        MRP:600
+        MRP:600,
+        color:"Dark Gray",
+        Hex:"#313131"
     },
     {
         id: 11,
@@ -287,7 +307,9 @@ export const bagItems = [
         discount: "25%",
         star: "4.4★",
         rating:"2.5K",
-        MRP:1150
+        MRP:1150,
+        color:"Dark Gray",
+        Hex:"#1f1d1c"
     },
     {
         id: 12,
@@ -298,7 +320,9 @@ export const bagItems = [
         discount: "25%",
         star: "4.2★",
         rating:"1.5K",
-        MRP:650
+        MRP:650,
+        color:"Dark Gray",
+        Hex:"#292728"
     },
     {
         id: 13,
@@ -309,7 +333,9 @@ export const bagItems = [
         discount: "15%",
         star: "3.9★",
         rating:"963",
-        MRP:850
+        MRP:850,
+        color:"Blue Gray",
+        Hex:"#4e525f"
     },
     {
         id: 14,
@@ -320,7 +346,9 @@ export const bagItems = [
         discount: "35%",
         star: "3.7★",
         rating:"1.7K",
-        MRP:850
+        MRP:850,
+        color:"Gray",
+        Hex:"#737373"
     },
     {
         id: 15,
@@ -331,7 +359,9 @@ export const bagItems = [
         discount: "10%",
         star: "4.0★",
         rating:"1.1K",
-        MRP:750
+        MRP:750,
+        color:"White",
+        Hex:"#f7f8f3"
     },
     {
         id: 16,
@@ -342,7 +372,9 @@ export const bagItems = [
         discount: "20%",
         star: "3.2★",
         rating:"657",
-        MRP:850
+        MRP:850,
+        color:"Dark Red",
+        Hex:"#712b2d"
     },
     {
         id: 17,
@@ -353,7 +385,9 @@ export const bagItems = [
         discount: "35%",
         star: "4.5★",
         rating:"2.5K",
-        MRP:1250
+        MRP:1250,
+        color:"Blue Gray",
+        Hex:"#434550"
     },
     {
         id: 18,
@@ -364,7 +398,9 @@ export const bagItems = [
         discount: "40%",
         star: "4.2★",
         rating:"3.3K",
-        MRP:1250
+        MRP:1250,
+        color:"Gray",
+        Hex:"#6e7e74"
     },
     {
         id: 19,
@@ -375,7 +411,9 @@ export const bagItems = [
         discount: "15%",
         star: "4.3★",
         rating:"3.2K",
-        MRP:950
+        MRP:950,
+        color:"Lavender",
+        Hex:"#b29fa9"
     },
     {
         id: 20,
@@ -386,18 +424,22 @@ export const bagItems = [
         discount: "10%",
         star: "3.7★",
         rating:"2.3K",
-        MRP:750
+        MRP:750,
+        color:"Tan",
+        Hex:"#ded2cc"
     },
     {
         id: 21,
         name: "American Tourister Laptop bag",
         image: laptopBag1 ,
-        price: "₹1100",
+        price: 1100,
         item: "Laptop Bag",
         discount: "5%",
         star: "4.4★",
         rating:"2.5K",
-        MRP:"MRP:₹1150"
+        MRP:1150,
+        color:"Dark Gray",
+        Hex:"#3e3d41"
     },
     {
         id: 22,
@@ -408,7 +450,9 @@ export const bagItems = [
         discount: "10%",
         star: "4.1★",
         rating:"1.2K",
-        MRP:1100
+        MRP:1100,
+        color:"Dark Gray",
+        Hex:"#3c3c3e"
     },
     {
         id: 23,
@@ -419,7 +463,9 @@ export const bagItems = [
         discount: "25%",
         star: "4.0★",
         rating:"2.2K",
-        MRP:1350
+        MRP:1350,
+        color:"Blue Gray",
+        Hex:"#25344b"
     },
     {
         id: 24,
@@ -430,7 +476,9 @@ export const bagItems = [
         discount: "15%",
         star: "3.4★",
         rating:"654",
-        MRP:1150
+        MRP:1150,
+        color:"Blue Gray",
+        Hex:"#484c55"
     },
     {
         id: 25,
@@ -441,7 +489,9 @@ export const bagItems = [
         discount: "25%",
         star: "4.0★",
         rating:"1.7K",
-        MRP:1550
+        MRP:1550,
+        color:"Gray",
+        Hex:"#68676c"
     },
     {
         id: 26,
@@ -452,7 +502,9 @@ export const bagItems = [
         discount: "10%",
         star: "4.0★",
         rating:"2K",
-        MRP:1550
+        MRP:1550,
+        color:"Light Gray",
+        Hex:"#c0c6c5"
     },
     {
         id: 27,
@@ -463,7 +515,9 @@ export const bagItems = [
         discount: "33%",
         star: "3.4★",
         rating:"2.9K",
-        MRP:1550
+        MRP:1550,
+        color:"Dark Gray",
+        Hex:"#353439"
     },
     {
         id: 28,
@@ -474,7 +528,9 @@ export const bagItems = [
         discount: "15%",
         star: "4.9★",
         rating:"5.5K",
-        MRP:1550
+        MRP:1550,
+        color:"Black",
+        Hex:"#050507"
     },
     {
         id: 29,
@@ -485,7 +541,9 @@ export const bagItems = [
         discount: "20%",
         star: "3.9★",
         rating:"2.7K",
-        MRP:1400
+        MRP:1400,
+        color:"Gray",
+        Hex:"#64646e"
     },
     {
         id: 30,
@@ -496,7 +554,9 @@ export const bagItems = [
         discount: "10%",
         star: "4.8★",
         rating:"4.5K",
-        MRP:1450
+        MRP:1450,
+        color:"Gray",
+        Hex:"#57565d"
     },
     
 ]

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { bagItems } from "../assets/assets.js"
 
 export const DataContext = createContext(null)
@@ -47,11 +47,14 @@ export const DataContextProvider = (props) => {
         for (const list in cart) {
             if (cart[list] > 0) {
                 let listItem = bagItems.find((pro) => pro.id.toString() === list);
-                totalAmount += listItem.MRP - listItem.price;
+                if(listItem){
+                    totalAmount += (listItem.MRP - listItem.price) * cart[list]
+                }
             }   
         }
         return totalAmount;
     }
+
 
     const contextValue = {
       cart,
@@ -61,7 +64,7 @@ export const DataContextProvider = (props) => {
       removeToCart,
       cartTotalAmount,
       cartTotalMRPAmount,
-      cartTotalDiscountAmount
+      cartTotalDiscountAmount,
     }
 
     return(

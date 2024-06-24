@@ -3,16 +3,17 @@ import "./BagList.css"
 import { FaTrashCanArrowUp } from "react-icons/fa6";
 import { IoBagAdd } from "react-icons/io5";
 import { DataContext } from '../../Context/DataContext';
+import { Link } from "react-router-dom";
 
 const BagList = ({id, name, discount, star, rating, price, MRP, image}) => {
 
-  const {cart,addToCart,removeToCart} = useContext(DataContext)
+  const {cart,addToCart,removeToCart } = useContext(DataContext)
 
 
   return (
     <div className='mainContainer'>
         <div className="imgContainer">
-            <img src={image} alt={name} />
+           <Link to={`./details/${id}`}><img src={image} alt={name} /></Link> 
         </div>
         <div className="bagInfo">
             <p className='bagName'>{name}</p>

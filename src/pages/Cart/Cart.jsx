@@ -70,7 +70,7 @@ const Cart = () => {
           <hr />
           <div className="discount-price sameClass">
             <p>Discount</p>
-            <p>₹{cartTotalDiscountAmount()}</p>
+            <p style={{color:"red"}}>-₹{cartTotalDiscountAmount()}</p>
           </div>
           <hr />
           <div className="delivery-fee sameClass">

@@ -26,7 +26,7 @@ const LoginPopupPage = ({setPopup}) => {
             <input type="checkbox" name="check" id="checkbox-round" required /><p>Be continuing, i agree to the terms of use & privacy policy.</p>
         </div>
         <div className='last-container'>
-            {change==="Login" ? <p>Create a new account? <span onClick={() => setChange("Sign Up")}>Click hear</span></p> : <></> }
+            {change==="Login" ? <p>Create a new account? <span onClick={() => setChange("Sign Up")}>Click here</span></p> : <></> }
             {change==="Sign Up" ? <p>Already have an account? <span onClick={() => setChange("Login")}>Login here</span></p> : <></>}
             
         </div>

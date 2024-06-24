@@ -42,7 +42,7 @@
 .shipping-method{
     border-radius: 5px;
     background-color: #eeeee6;
-    width: 400px;
+    width: 350px;
     padding: 5px;
     margin: 10px;
 }
@@ -83,11 +83,29 @@
 }
 
 #total-amount-container-two{
-    width: 375px;
+    width: 330px;
 }
+
+
+
+
+
 
 @media only screen and (max-width: 600px){
     .order-container{
         flex-direction: column;
+    }
+    .delivery-details input{
+       width: 92%;
+    }
+    .check-details input{
+        width: 50px;
+        cursor: pointer;
+    }
+    .shipping-method{
+        width: 380px;
+    }
+    #total-amount-container-two{
+        width: 360px;
     }
 }
