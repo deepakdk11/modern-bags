@@ -6,8 +6,8 @@ import Home from "./pages/Home/Home.jsx"
 import Cart from "./pages/Cart/Cart.jsx";
 import LoginPopupPage from "./components/loginPopupPage/LoginPopupPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import PlaceOrder from "./pages/PlaceOrder/PlaceOrder.jsx";
-import BagDetails from "./pages/BagDetails/BagDetails.jsx";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder.jsx";;
+import Banner from "./components/Banner/Banner.jsx";
 
 
 function App(){
@@ -36,7 +36,7 @@ function App(){
           <Route path="/" element={<Home images={images} />} />
           <Route path="/cart" element={ <Cart /> }/>
           <Route path="/order" element={ <PlaceOrder /> }/>
-          <Route path="/details/:id" element={ <BagDetails /> }/>
+          <Route path="/details/:id" element={ <Banner /> }/>
         </Routes>
       </div>  
       <Footer />  

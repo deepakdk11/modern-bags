@@ -1,13 +1,10 @@
 import React, { useContext } from 'react'
 import "./BagDetails.css"
 import { DataContext } from '../../Context/DataContext'
-import { useParams } from 'react-router-dom'
 
 
-const BagDetails = () => {
-  const { bagItems , cart, addToCart, removeToCart,} = useContext(DataContext)
-  const {id} = useParams()
-  const product = bagItems.find((product) => product.id === Number(id))
+const BagDetails = ({product}) => {
+  const { cart, addToCart, removeToCart,} = useContext(DataContext)
   if (!product) {
     return <h2>Page not found</h2>
   }

@@ -125,3 +125,33 @@
     background-color: rgb(63, 63, 238);
     color: white;
 }
+
+
+@media only screen and (max-width: 600px){
+    .fullView{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .fullView hr{
+        width: 80%;
+    }
+    .fullView-img img{
+        height: 200px;
+    }
+    .lastView{
+        align-items: center;
+    }
+    .mrp-discount{
+        font-size: 15px;
+        margin: 15px 0px;
+    }
+    .lastView-price{
+        font-size: 18px;
+        margin: 5px 0px;
+    }
+    .lastView-rating{
+        margin: 10px 0px;
+    }
+}

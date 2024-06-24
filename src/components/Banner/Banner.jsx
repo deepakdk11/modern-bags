@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import BagDetails from "../../pages/BagDetails/BagDetails"
+import { DataContext } from '../../Context/DataContext'
+import { useParams } from 'react-router-dom'
 
 const Banner = () => {
+  const { bagItems } = useContext(DataContext)
+  const {id} = useParams()
+  const product = bagItems.find((product) => product.id === Number(id))
   return (
     <div>
-      hello  World
+      <p>{`Home/${product.name}/${product.id}`}</p>
+      <BagDetails product = {product} />
     </div>
   )
 }
