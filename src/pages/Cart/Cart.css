@@ -13,10 +13,13 @@
     align-items: center;
     justify-content: center;
     
+    
 }
 .cart-detials{
     margin: 10px 0px 10px 0px;
     text-align: center;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .img-name{
@@ -27,6 +30,7 @@
 }
 .img-name img{
     height: 100px;
+    border-radius: 5px;
 }
 
 .add-plus-btn{
@@ -56,7 +60,7 @@
     width: 250px;
     border: 0px;
     height: 25px;
-    background-color: rgb(235, 235, 222);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     border-radius: 5px 0px 0px 5px;
 }
@@ -78,7 +82,7 @@
     border-radius: 5px;
     width: 300px;
     padding: 15px;
-    background-color: #eeeee6;
+    background-color: #ffffff;
 }
 
 .total-amount-container h3{

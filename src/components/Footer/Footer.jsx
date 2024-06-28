@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Footer.css'
+import { logos } from "../../assets/assets"
 
 const Footer = () => {
   const [addClass, setAddClass] = useState("")
@@ -8,7 +9,7 @@ const Footer = () => {
       <hr />
       <div className='footer-2nd-container'>
         <div>
-          <h1>Modern Bags</h1>
+          <img src={logos.logo1} alt="" />
         </div>
         <div className='cat'>
           <h4 onClick={() => setAddClass("categ")}>CATEGORIES <i className="arrow down"></i></h4>

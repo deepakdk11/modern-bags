@@ -12,14 +12,14 @@
     height: fit-content;
     width: fit-content;
     padding: 10px;
-    background-color: #eeeee6;
+    background-color: #ffffff;
 
 }
 .delivery-details h1{
     margin: 30px 10px;
 }
 .delivery-details .orderLogin{
-    background-color: #ffffff;
+    background-color: #eeeee6;
     border-radius: 5px;
     width: 95%;
     padding: 10px 0px;
@@ -31,6 +31,8 @@
     margin: 10px;
     border-radius: 5px;
     border: 0px;
+    /* border: 1px solid rgb(49, 45, 45); */
+    background-color: #eeeee6;
 }
 .delivery-details input:focus{
     outline: none;
@@ -41,7 +43,7 @@
 
 .shipping-method{
     border-radius: 5px;
-    background-color: #eeeee6;
+    background-color: #ffffff;
     width: 350px;
     padding: 5px;
     margin: 10px;
@@ -68,6 +70,8 @@
     background-color: white;
     padding: 10px;
     margin: 10px;
+    border: 1px solid rgb(204, 196, 196);
+    /* background-color: #eeeee6; */
 }
 
 .check-details{

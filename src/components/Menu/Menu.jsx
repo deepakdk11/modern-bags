@@ -40,7 +40,7 @@ const Menu = () => {
                     <li
                         onClick={() => setMenu("contact")}
                         className={menu === "contact" ? "active" : ""}>
-                        Contact
+                        <a href="#contact">Contact</a>
                     </li>
 
                 </ul>)}

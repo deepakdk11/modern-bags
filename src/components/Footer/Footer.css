@@ -12,8 +12,8 @@
     width: 80%;
     margin: 30px auto;
 }
-.footer-2nd-container h1{
-    color: #cc6ce5;
+.footer-2nd-container img{
+    width: 250px;
 }
 .footer-2nd-container h4{
     font-size: 20px;
@@ -46,7 +46,7 @@
 .linkedin:hover{
     color: #0077B5;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     .footer-1st-container{
         flex-direction: column;
         justify-content: center;

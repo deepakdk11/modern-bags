@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp, FaYoutube }
 
 const SocialApps = () => {
   return (
-    <div className='footer-1st-container'>
+    <div className='footer-1st-container' id='contact'>
     <div className='join'>
       <h3>Sign up for The Circle Program</h3>
       <p>Subscribe to receive updates, access to exclusive deals, and more.</p>

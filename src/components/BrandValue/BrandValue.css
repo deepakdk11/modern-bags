@@ -10,7 +10,7 @@
 
 .brandContainer h2{
     text-align: center;
-    color: #cc6ce5;
+    color: #000000;
 }
 
 .values{
@@ -35,13 +35,17 @@
     width: 220px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
+    .brandContainer{
+        margin-bottom: 20px;
+    }
     .values{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     }
     .values div{
         padding: 20px;
+        justify-self: center;
     }
     .brandContainer h1{
         font-size: larger;

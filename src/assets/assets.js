@@ -1,3 +1,6 @@
+import logo1 from "./logo1.png"
+import logofull from "./logofull1.png"
+
 import delivery from "./delivery.png"
 import genuine from "./genuine.png"
 import payment from "./payment.png"
@@ -105,6 +108,11 @@ import trekkingBag7 from "./feeds/trekkingBag7.jpg"
 import trekkingBag8 from "./feeds/trekkingBag8.jpg"
 import trekkingBag9 from "./feeds/trekkingBag9.jpg"
 import trekkingBag10 from "./feeds/trekkingBag10.jpg"
+
+export const logos = {
+    logo1,
+    logofull
+}
 
 export const courier = {
     dhl,

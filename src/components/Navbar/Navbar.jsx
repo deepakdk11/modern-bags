@@ -2,9 +2,9 @@ import React  from "react";
 import "./Navbar.css"
 import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { RiHandbagLine } from "react-icons/ri";
 import Menu from "../Menu/Menu";
 import SearchItems from "../SearchItems/SearchItems";
+import { logos } from "../../assets/assets"
 
 const Navbar = ({setPopup}) => {
 
@@ -13,7 +13,7 @@ const Navbar = ({setPopup}) => {
         <nav>
             <Menu />
             <div className="title">
-               <RiHandbagLine size={25} /> <p>  Modern Bags</p>
+                <img src={logos.logo1} alt="" />
             </div>
             
             <div className="add-cart">

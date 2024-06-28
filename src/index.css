@@ -7,8 +7,8 @@
 
 body{
     height: 100vh;
-    /* background-color: #eeeee6; */
-    /* background-color: #efefef; */
+    background-color: #eeeee6;
+    background-color: #efefef;
     scroll-behavior: smooth;
     font-family: "Josefin Sans", sans-serif;
     font-family: "Outfit", sans-serif;

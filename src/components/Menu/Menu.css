@@ -1,14 +1,12 @@
 .menu{
     padding: 0px 10px;
+    /* background-color: rgba(0, 0, 0, .4); */
 }
 
 .menu ul{
     display: flex;
     gap: 20px;
-    background-color: #cc6ce5;
-    /* background-color: #eeeee6; */
-    color: white;
-    /* color: rgb(63, 63, 63); */
+    color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 10px;  
     
@@ -25,20 +23,21 @@
 
 .menu .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 600px) {
+    .menu {
+        position: relative;
+    }
     .menu ul{
-        flex-direction: column;
-        background-color: #cc6ce5;
-        /* background-color: #eeeee6; */
-        color: white;
-        /* color:rgb(63, 63, 63) ; */
-        padding: 10px;
-        border-radius: 10px;
+        font-size: 14px;
+        position: absolute;
+        top: 20px;
+        width: 300px;
+
     }
     .menu .active{
-        border-bottom: 2px solid rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(0, 0, 0);
     }
 }

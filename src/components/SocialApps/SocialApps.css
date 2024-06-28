@@ -16,21 +16,17 @@
 .join input{
     margin: 10px 0px 10px 0px;
     padding: 9px;
-    border: 1px solid #cc6ce5;
+    border: 1px solid #e1dae2;
     border-radius: 5px;
 }
 .join button{
-    background-color:  #cc6ce5;
+    background-color: rgb(252, 21, 21);
     padding: 9px;
     /* background-color: transparent; */
     border-radius: 5px;
     cursor: pointer;
     border: 0;
     color: white;
-    transition: all .3s;
-}
-.join button:hover{
-    padding: 12px;
 }
 
 

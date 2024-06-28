@@ -38,8 +38,8 @@ const BagDetails = ({product}) => {
           <button onClick={() => removeToCart(product.id)}>-</button>
         </div>
         <div className="add-buy">
-          <button>Add To Cart</button>
-          <button className='buy-btn'>Buy Now</button>
+          <button onClick={() => addToCart(product.id)}>Add To Cart</button>
+          {/* <button className='buy-btn' >Buy Now</button> */}
         </div> 
       </div>
     </div>

@@ -50,7 +50,7 @@
     padding: 10px;
     border: 0;
     color: white;
-    background-color: #cc6ce5; 
+    background-color: rgb(252, 21, 21); 
     cursor: pointer; 
     border-radius: 5px;  
 }
@@ -70,19 +70,16 @@ span{
     cursor: pointer;
 }
 
-#checkbox-round {
-    width: 1.3em;
-    height: 1.3em;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-}
 
-#checkbox-round:checked {
-    border: 1px solid white;
-    background-color: #cc6ce5;
+@media only screen and (max-width: 600px){
+    .login{
+        font-size: 14px;
+        padding: 10px;
+        margin: 40px auto;
+        background-color: white;
+        width: fit-content;
+        height: fit-content;
+        width: max(23vw, 330px);
+        border-radius: 5px;
+    }
 }

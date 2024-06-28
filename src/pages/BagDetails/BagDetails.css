@@ -1,10 +1,11 @@
 .fullView{
     margin: 25px auto;
-    width: fit-content;
+    width: 80%;
     display: flex;
-    box-shadow: 0 0 11px #707070; 
+    /* box-shadow: 0 0 11px #707070;  */
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 20px 10px;
+    background-color: white;
 }
 .fullView-img{
     height: fit-content;
@@ -17,8 +18,12 @@
 .lastView{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
-
+.lastView hr{
+    width: 80%;
+}
 .lastView-price{
     font-size: 22px;
     font-weight: bold;
@@ -111,19 +116,24 @@
 
 .add-buy{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
+    width: 80%;
     margin: 10px 0px;
 }
 .add-buy button{
     padding: 10px;
     font-size: 15px;
-    width: 150px;
+    width: 80%;
     border-radius: 5px;
     border: 0px;
-}
-.buy-btn{
+    cursor: pointer;
     background-color: rgb(63, 63, 238);
     color: white;
+    transition: all 0.3s;
+}
+.add-buy button:hover{
+    width: 85%;
 }
 
 
