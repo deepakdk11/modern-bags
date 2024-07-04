@@ -18,21 +18,21 @@ const PlaceOrder = () => {
             <div className='orderLogin'>
                 <p>Do you already have account <a href="#" style={{color:"blue"}}>login?</a></p>
             </div> 
-            <input type="email" name="mail" id="mail" placeholder='Email ID' />
+            <input type="email" name="mail" id="mail" placeholder='Email ID' required />
             <div className="first-last">
-                <input type="text" placeholder='First Name' />
-                <input type='text' placeholder='Last Name' />
+                <input type="text" placeholder='First Name' required />
+                <input type='text' placeholder='Last Name' required />
             </div>
-            <input type="text" placeholder='Street' className='street' />
+            <input type="text" placeholder='Street' className='street' required />
             <div className="city-state">
-                <input type="text" placeholder='City'/>
-                <input type="text" placeholder='State'/>
+                <input type="text" placeholder='City' required/>
+                <input type="text" placeholder='State' required/>
             </div>
             <div className="pincode-country">
-                <input type="text" placeholder='Pin Code'/>
-                <input type="text" placeholder='Country' />
+                <input type="text" placeholder='Pin Code' required/>
+                <input type="text" placeholder='Country' required />
             </div>
-            <input type="tel" name="Phone Number" id="phone" placeholder='Mobile Number' />
+            <input type="tel" name="Phone Number" id="phone" placeholder='Mobile Number' required />
             <label htmlFor='check-details-one' className='check-details'>
                 <input type="checkbox" name="" id="check-details-one" />
                 <p>Save my details for future purchase</p>
@@ -41,6 +41,7 @@ const PlaceOrder = () => {
                 <input type="checkbox" name="" id="check-details-two" />
                 <p>Subscribe for exclusive  offers & coupons</p>
             </label>
+            <button type='submit' className="checkout">PROCEED TO PAY</button>
         </form>
         <div className="order-last-container">
             <div className="shipping-method">
@@ -103,7 +104,6 @@ const PlaceOrder = () => {
             <p>Total</p>
             <p>₹{cartTotalAmount()}</p>
           </div>
-          <button className="checkout">PROCEED TO PAY</button>
         </div>
         </div>
     </div>

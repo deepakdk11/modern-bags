@@ -4,6 +4,7 @@ import { bagItems } from "../assets/assets.js"
 export const DataContext = createContext(null)
 
 export const DataContextProvider = (props) => {
+
     
     const [cart, setCart] = useState({});
 

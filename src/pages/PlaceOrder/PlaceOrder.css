@@ -90,6 +90,16 @@
     width: 330px;
 }
 
+.checkout{
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(252, 21, 21);
+    color: white;
+    cursor: pointer;
+}
 
 
 

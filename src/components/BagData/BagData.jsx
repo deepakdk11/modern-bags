@@ -1,15 +1,30 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./BagData.css"
 import { DataContext } from '../../Context/DataContext'
 import BagList from '../BagList/BagList'
 
 const BagData = ({item}) => {
     const { bagItems } = useContext(DataContext)
+
+    const [load, setload] = useState(bagItems)
+
+    
+    const shuffledProducts = [...bagItems].sort(() => Math.random() - 0.5)
+    useEffect(() => {
+      setload(shuffledProducts)
+    },[])
+
+    const [visibleProducts, setVisibleProducts] = useState(20)
+
+    const loadMore = () => {
+      setVisibleProducts(prevVisible => prevVisible + 20);
+    };
+
   return (
     <div className='bagDataContainer'>
       <h2>All Categories Bags</h2>
       <div className='bagData'>
-        {bagItems.map((list, index) => {
+        {load.slice(0, visibleProducts).map((list, index) => {
           if (item==="All" || item==list.item) {
             return (
               <BagList
@@ -28,6 +43,12 @@ const BagData = ({item}) => {
             
         })}
       </div>
+      <div className="view-more">
+      {visibleProducts < shuffledProducts.length && (
+        <button className='more'onClick={loadMore}>Load More</button>
+      )}
+      </div>
+      
     </div>
   )
 }
