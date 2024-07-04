@@ -9,11 +9,19 @@ nav{
     color: rgb(109, 109, 109);
 }
 
-
-.title img{
-    height: 50px;
-    
+.title{
+    flex: 1;
+    align-self: center;
 }
+.title p{
+    text-align: center;
+    font-family: "Playwrite RO", cursive;
+    font-weight:bolder;
+    font-size: larger;
+    color:rgb(0, 0, 0) ;
+}
+
+
 .add-cart{
     margin: 0px 0px;
     display: flex;

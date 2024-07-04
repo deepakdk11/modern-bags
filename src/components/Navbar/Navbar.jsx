@@ -4,7 +4,6 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Menu from "../Menu/Menu";
 import SearchItems from "../SearchItems/SearchItems";
-import { logos } from "../../assets/assets"
 
 const Navbar = ({setPopup}) => {
 
@@ -13,7 +12,7 @@ const Navbar = ({setPopup}) => {
         <nav>
             <Menu />
             <div className="title">
-                <img src={logos.logo1} alt="" />
+                <Link to={"/"}><p>Modern Bags...</p></Link> 
             </div>
             
             <div className="add-cart">

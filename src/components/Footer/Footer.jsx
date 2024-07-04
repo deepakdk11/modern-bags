@@ -8,8 +8,8 @@ const Footer = () => {
     <div className='footerContainer'>
       <hr />
       <div className='footer-2nd-container'>
-        <div>
-          <img src={logos.logo1} alt="" />
+        <div className='footer-tittle'>
+          <p>Modern Bags...</p>
         </div>
         <div className='cat'>
           <h4 onClick={() => setAddClass("categ")}>CATEGORIES <i className="arrow down"></i></h4>
