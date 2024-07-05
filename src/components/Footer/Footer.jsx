@@ -3,7 +3,9 @@ import './Footer.css'
 import { logos } from "../../assets/assets"
 
 const Footer = () => {
+
   const [addClass, setAddClass] = useState("")
+  
   return (
     <div className='footerContainer'>
       <hr />

@@ -5,6 +5,7 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
+
   const {
       cart,
       bagItems,
@@ -14,6 +15,7 @@ const Cart = () => {
       cartTotalMRPAmount,
       cartTotalDiscountAmount
   } = useContext(DataContext);
+  
   return (
     <div className="cart-page">
       <h1>Your Bag Items</h1>

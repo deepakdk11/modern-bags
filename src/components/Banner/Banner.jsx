@@ -5,9 +5,12 @@ import { useParams } from 'react-router-dom'
 import "./Banner.css"
 
 const Banner = () => {
+
   const { bagItems } = useContext(DataContext)
+
   const {id} = useParams()
   const product = bagItems.find((product) => product.id === Number(id))
+  
   return (
     <div className='banner'>
       <p>{`Home>Shop>${product.name}`}</p>

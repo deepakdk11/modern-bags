@@ -4,11 +4,11 @@ import { DataContext } from '../../Context/DataContext'
 
 
 const BagDetails = ({product}) => {
+
   const { cart, addToCart, removeToCart,} = useContext(DataContext)
   if (!product) {
     return <h2>Page not found</h2>
   }
-
 
   return (
     <div className='fullView'>
@@ -39,7 +39,6 @@ const BagDetails = ({product}) => {
         </div>
         <div className="add-buy">
           <button onClick={() => addToCart(product.id)}>Add To Cart</button>
-          {/* <button className='buy-btn' >Buy Now</button> */}
         </div> 
       </div>
     </div>

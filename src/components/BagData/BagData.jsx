@@ -4,21 +4,23 @@ import { DataContext } from '../../Context/DataContext'
 import BagList from '../BagList/BagList'
 
 const BagData = ({item}) => {
-    const { bagItems } = useContext(DataContext)
 
-    const [load, setload] = useState(bagItems)
+  const { bagItems } = useContext(DataContext)
+
+  const [load, setload] = useState(bagItems)
 
     
-    const shuffledProducts = [...bagItems].sort(() => Math.random() - 0.5)
-    useEffect(() => {
-      setload(shuffledProducts)
-    },[])
+  const shuffledProducts = [...bagItems].sort(() => Math.random() - 0.5)
+  
+  useEffect(() => {
+    setload(shuffledProducts)
+  },[])
 
-    const [visibleProducts, setVisibleProducts] = useState(20)
+  const [visibleProducts, setVisibleProducts] = useState(20)
 
-    const loadMore = () => {
-      setVisibleProducts(prevVisible => prevVisible + 20);
-    };
+  const loadMore = () => {
+    setVisibleProducts(prevVisible => prevVisible + 20);
+  };
 
   return (
     <div className='bagDataContainer'>

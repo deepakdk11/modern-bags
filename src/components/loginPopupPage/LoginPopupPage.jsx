@@ -4,7 +4,7 @@ import "./LoginPopupPage.css"
 
 const LoginPopupPage = ({setPopup}) => {
 
-    const [change, setChange] = useState("Login")
+  const [change, setChange] = useState("Login")
 
   return (
     <div className='popup'>
@@ -16,8 +16,6 @@ const LoginPopupPage = ({setPopup}) => {
         <div className="input-container">
             {change==="Sign Up" ? <input type='text' placeholder='Your Name' required/> : <></>}
             {change==="Sign Up" ? <input type="tel" name="Phone Number" id="number" placeholder='Your Mobile Number' required /> : <></>}
-            
-            
             <input type="email" name="email" id="mail"  placeholder='Your Mail ID' required/>
             <input type="password" name="password" id="password" placeholder='Password' required />
             <button type='submit' >{change}</button>
@@ -28,7 +26,6 @@ const LoginPopupPage = ({setPopup}) => {
         <div className='last-container'>
             {change==="Login" ? <p>Create a new account? <span onClick={() => setChange("Sign Up")}>Click here</span></p> : <></> }
             {change==="Sign Up" ? <p>Already have an account? <span onClick={() => setChange("Login")}>Login here</span></p> : <></>}
-            
         </div>
       </form>
     </div>
