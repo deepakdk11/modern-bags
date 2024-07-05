@@ -5,6 +5,11 @@
     gap: 20px;
 }
 
+.searchBox img{
+    height: 30px;
+    cursor: pointer;
+}
+
 .search{
     padding: 5px;
     border: 1px solid #b5afb6;

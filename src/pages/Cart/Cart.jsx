@@ -14,7 +14,6 @@ const Cart = () => {
       cartTotalMRPAmount,
       cartTotalDiscountAmount
   } = useContext(DataContext);
-
   return (
     <div className="cart-page">
       <h1>Your Bag Items</h1>
@@ -57,7 +56,7 @@ const Cart = () => {
         <div className="promo-container">
           <h3>If have a promo code, Enter it here</h3>
           <div className="promo-input">
-            <input type="text" name="promo code" />
+            <input type="text" name="promo code" placeholder="Promo Code" />
             <button className="promo-btn">Apply</button>
           </div>
         </div>

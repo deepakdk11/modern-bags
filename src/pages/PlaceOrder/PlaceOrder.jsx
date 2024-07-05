@@ -3,7 +3,7 @@ import "./PlaceOrder.css"
 import { DataContext } from "../../Context/DataContext";
 import { courier } from '../../assets/assets';
 
-const PlaceOrder = () => {
+const PlaceOrder = ({setPopup}) => {
 
     const {
         cartTotalAmount,
@@ -16,7 +16,7 @@ const PlaceOrder = () => {
         <form action="" className='delivery-details'>
             <h1>Delivery Information</h1>
             <div className='orderLogin'>
-                <p>Do you already have account <a href="#" style={{color:"blue"}}>login?</a></p>
+                <p>Do you already have account <a href="#" style={{color:"blue"}} onClick={() => setPopup(true)}>login?</a></p>
             </div> 
             <input type="email" name="mail" id="mail" placeholder='Email ID' required />
             <div className="first-last">

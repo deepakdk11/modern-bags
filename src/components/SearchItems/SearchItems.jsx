@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./SearchItems.css"
-import { FaSearch } from "react-icons/fa";
+import {logos} from "../../assets/assets"
 
 const SearchItems = () => {
 
@@ -11,12 +11,7 @@ const SearchItems = () => {
       { hideSearch && (<form>
         <input className='search' type="text" placeholder='Search Items' />
       </form>)}
-        <FaSearch
-         role="button"
-         size={20}
-         style={{cursor:"pointer"}}
-         onClick={() => setHideSearc(!hideSearch)}
-        />      
+        <img src={logos.search} alt="" onClick={() => setHideSearc(!hideSearch)} />           
     </div>
   )
 }

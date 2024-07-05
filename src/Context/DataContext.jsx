@@ -5,6 +5,7 @@ export const DataContext = createContext(null)
 
 export const DataContextProvider = (props) => {
 
+
     
     const [cart, setCart] = useState({});
 
@@ -13,7 +14,7 @@ export const DataContextProvider = (props) => {
             setCart((prev) => ({...prev,[listId]:1}))
         }
         else{
-            setCart((prev) => ({...prev,[listId]:prev[listId]+1}))
+           setCart((prev) => ({...prev,[listId]:prev[listId]+1}))
         }
     }
 

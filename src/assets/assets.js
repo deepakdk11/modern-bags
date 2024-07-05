@@ -1,10 +1,10 @@
-import logo1 from "./logo1.png"
-import logofull from "./logofull1.png"
-
 import delivery from "./delivery.png"
 import genuine from "./genuine.png"
 import payment from "./payment.png"
 import warranty from "./warranty.png"
+
+import cart from "./cart.png"
+import search from "./search.png"
 
 import dhl from "./dhl.jpg"
 import DTDC from "./DTDC.jpg"
@@ -110,8 +110,8 @@ import trekkingBag9 from "./feeds/trekkingBag9.jpg"
 import trekkingBag10 from "./feeds/trekkingBag10.jpg"
 
 export const logos = {
-    logo1,
-    logofull
+    cart,
+    search
 }
 
 export const courier = {

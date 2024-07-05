@@ -35,7 +35,7 @@ function App(){
         <Routes>
           <Route path="/" element={<Home images={images} />} />
           <Route path="/cart" element={ <Cart /> }/>
-          <Route path="/order" element={ <PlaceOrder /> }/>
+          <Route path="/order" element={ <PlaceOrder  setPopup={setPopup} /> }/>
           <Route path="/details/:id" element={ <Banner /> }/>
         </Routes>
       </div>  
