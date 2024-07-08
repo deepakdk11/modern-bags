@@ -1,34 +1,33 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import { RiMenu2Fill } from "react-icons/ri";
 import "./Menu.css"
+import { IoMdClose } from "react-icons/io";
 
-const Menu = () => {
+const Menu = ({setMenuPopup}) => {
 
     const [menu, setMenu] = useState("home")
-    const [toggle, setToggle] = useState(false)
 
   return (
-    <>
-      <RiMenu2Fill
-        className='menu-icon'
-        onClick={() => setToggle(!toggle)}
-        size={30}
-        style={{cursor: "pointer"}}
-      />
-
+    <div className='menuPopup'>
       <div className="menu">
-                { toggle && (<ul>
+        <div className='closeIcon'>
+          <IoMdClose className='icon' 
+          onClick={() => setMenuPopup(false)} 
+          size={25}
+          style={{cursor:"pointer", color:"white"}}
+          />
+        </div>
+                <ul>
                     <li
                         onClick={() => setMenu("home")}
                         className={menu === "home" ? "active" : ""}>
-                        <Link to="/">Home</Link>
+                        <Link to="/" onClick={() => setMenuPopup(false)}>Home</Link>
                     </li>
 
                     <li
                         onClick={() => setMenu("categories")}
                         className={menu === "categories" ? "active" : ""}>
-                        <a href="#container">categories</a>
+                        <a href="#container" onClick={() => setMenuPopup(false)}>categories</a>
                     </li>
 
                     <li
@@ -40,12 +39,12 @@ const Menu = () => {
                     <li
                         onClick={() => setMenu("contact")}
                         className={menu === "contact" ? "active" : ""}>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" onClick={() => setMenuPopup(false)}>Contact</a>
                     </li>
 
-                </ul>)}
+                </ul>
             </div>
-    </>
+    </div>
   )
 }
 

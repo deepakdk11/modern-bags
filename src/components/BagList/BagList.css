@@ -125,10 +125,10 @@
     justify-content: space-between;
     align-items: center;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 625px){
     .imgContainer img{
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 140px;
     }
 
     .bagName{

@@ -1,18 +1,23 @@
 import React, { useContext }  from "react";
 import "./Navbar.css"
 import { Link } from "react-router-dom";
-import Menu from "../Menu/Menu";
 import SearchItems from "../SearchItems/SearchItems";
 import { logos } from "../../assets/assets"
 import { DataContext } from "../../Context/DataContext";
+import { RiMenu2Fill } from "react-icons/ri";
 
-const Navbar = ({setPopup}) => {
+const Navbar = ({setPopup, setMenuPopup}) => {
 
     const { cartTotalAmount } = useContext(DataContext)
 
     return(
         <nav>
-            <Menu />
+            <RiMenu2Fill
+                className='menu-icon'
+                size={30}
+                style={{cursor: "pointer"}}
+                onClick={() => setMenuPopup(true)}
+            />
             <div className="title">
                 <Link to={"/"}><p>Modern Bags...</p></Link> 
             </div>

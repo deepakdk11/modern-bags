@@ -1,12 +1,28 @@
+.menuPopup{
+    position: absolute;
+    top: 0;
+    width: fit-content;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+}
+
 .menu{
     padding: 0px 10px;
-    /* background-color: rgba(0, 0, 0, .4); */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.closeIcon{
+    align-self: flex-end;
+    margin-top: 10px;
 }
 
 .menu ul{
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 10px;  
     
@@ -17,27 +33,37 @@
     text-align: center;
     list-style: none;
     cursor: pointer;
-    /* filter: drop-shadow(0 5px 10px #0009); */
     transition: all 1s ease;
 }
 
 .menu .active{
     padding-bottom: 2px;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 @media only screen and (max-width: 600px) {
-    .menu {
-        position: relative;
+    .menuPopup{
+        width: 100%;
     }
     .menu ul{
-        font-size: 14px;
-        position: absolute;
-        top: 20px;
-        width: 300px;
-
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 10px;  
+        margin-top: 30px;
+        background-color: white;
+        
+    }
+    .menu{
+        height: 100vh;
+        
     }
     .menu .active{
-        border-bottom: 2px solid rgb(0, 0, 0);
+        padding: 5px;
+        background-color: rgb(209, 209, 250);
+        border-radius: 10px;
     }
+
 }

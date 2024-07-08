@@ -19,6 +19,7 @@ nav{
 
 .icon-dot img{
     height: 30px;
+
 }
 .icon-dot .dot{
     position: absolute;
@@ -80,13 +81,8 @@ nav{
     .title{
         padding: 0;
     }
-
-}
-
-@media only screen and (max-width: 375px) {
-    .title img{
-        height: 30px;
-        
+    .title p{
+        font-size: 14px;
     }
 
 }

@@ -8,12 +8,14 @@ import LoginPopupPage from "./components/loginPopupPage/LoginPopupPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder.jsx";;
 import Banner from "./components/Banner/Banner.jsx";
+import Menu from "./components/Menu/Menu.jsx";
 
 
 function App(){
 
 
   const [popup, setPopup] = useState(false)
+  const [menuPopup, setMenuPopup] = useState(false)
 
   const images = [
     imageBanner.imgBanner1,
@@ -28,10 +30,11 @@ function App(){
   return(
     <> 
     <div>
+      {menuPopup?<Menu setMenuPopup={setMenuPopup} />:<></>}
     {popup?<LoginPopupPage setPopup={setPopup} /> : <></>}
     </div>
       <div>
-        <Navbar setPopup={setPopup} />
+        <Navbar setPopup={setPopup} setMenuPopup={setMenuPopup} />
         <Routes>
           <Route path="/" element={<Home images={images} />} />
           <Route path="/cart" element={ <Cart /> }/>
