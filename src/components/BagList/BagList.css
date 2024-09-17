@@ -15,10 +15,8 @@
 }
 
 .mainContainer:hover{
-    /* box-shadow: 0 0 21px #000000; */
-    padding: 0px;
-    
-    
+    transform: scale(1.09);
+    opacity: 1;
 }
 
 .imgContainer img{
